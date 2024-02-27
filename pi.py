@@ -5,3 +5,5 @@ text = """
 
 # TODO
 
+pi = list(map(len, text.replace(",", "").replace(".", "").split()))
+print("".join(map(str, pi)))
