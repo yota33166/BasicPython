@@ -4,6 +4,11 @@ b = input("bの値を入力: ")
 
 # TODO
 def is_prime(n: int):
+    if not isinstance(n, int):
+        raise TypeError("引数は整数である必要があります")
+    elif n <= 0:
+        raise ValueError("引数は正の整数である必要があります")
+
     if n <= 1:
         return False
     if n == 2:
